@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 2 EBAC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Projeto 2: Lista de contatos!</h1>
+        </header>
+        <section id="espaco-lista">
+            <form id="form-atividade">
+                <input type="text" id="nome" required placeholder="Nome" class="input-place">
+                <input type="tel" id="telefone" required placeholder="(DD) 12345-6789">
+
+                <button type="submit" id="adicionar">Adicionar contato</button>
+
+                <button type="button" id="apagar_tudo" class="botao-vermelho">Apagar tudo</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome:</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Quantidade de contatos:</td>
+                        <td id="quantidade-contatos">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
